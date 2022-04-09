@@ -28,6 +28,7 @@ public class MakeRoad : MonoBehaviour
         mesh = GetComponent<MeshFilter>().mesh;
     }
 
+
     // Update is called once per frame
     void Update()
     {

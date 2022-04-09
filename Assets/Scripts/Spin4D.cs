@@ -196,7 +196,7 @@ public class Spin4D : MonoBehaviour
     void Project(float dotw, float dotx, float doty, float dotz, float projectorw){
         float dot2plane = Dot2PlaneLength(dotw, dotx, doty, dotz, 1, 0, 0, 0, 0, 0, 0, 0);
         float projector2plane = Dot2PlaneLength(projectorw,0,0,0 , 1,0,0,0,0,0,0,0);
-        
+
         OutAxis.w = dot2plane / ( projector2plane - dot2plane ) * ( dotw - projectorw ) + dotw ;
         OutAxis.x = dot2plane / ( projector2plane - dot2plane ) * ( dotx ) + dotx ;
         OutAxis.y = dot2plane / ( projector2plane - dot2plane ) * ( doty ) + doty ;
