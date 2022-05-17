@@ -156,17 +156,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 14
+  intindex: 13
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -186,7 +182,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &242510248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,17 +330,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 16
+  intindex: 15
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -365,7 +356,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &259579598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,17 +504,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 7
+  intindex: 6
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -544,7 +530,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &374203862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,17 +678,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 11
+  intindex: 10
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -723,7 +704,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &406414063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,17 +1030,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 13
+  intindex: 12
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -1080,7 +1056,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &688740192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,17 +1204,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 10
+  intindex: 9
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -1259,7 +1230,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &900534551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,17 +1378,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 4
+  intindex: 3
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -1438,7 +1404,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &911723802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,17 +1552,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 8
+  intindex: 7
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -1617,7 +1578,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1160829335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,17 +1726,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 6
+  intindex: 5
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -1796,7 +1752,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1261792179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,17 +2015,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 1
+  intindex: 0
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -2090,7 +2041,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1338899779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,17 +2074,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 3
+  intindex: 2
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -2154,7 +2100,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1338899781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2303,17 +2248,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 12
+  intindex: 11
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -2333,7 +2274,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1615491599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2482,17 +2422,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 2
+  intindex: 1
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -2512,7 +2448,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1716734895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,17 +2596,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 5
+  intindex: 4
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -2691,7 +2622,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1978162755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2840,17 +2770,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 9
+  intindex: 8
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -2870,7 +2796,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1993934683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3019,17 +2944,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec1237bcd2e94f0ca7dd6865ed7eb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intindex: 15
+  intindex: 14
   press1: 0
   press2: 0
   press3: 0
   press4: 0
   press5: 0
   press6: 0
-  W: 0
-  X: 0
-  Y: 0
-  Z: 0
   Matx:
     e00: 0
     e01: 0
@@ -3049,7 +2970,6 @@ MonoBehaviour:
     e33: 0
   SinSpeed: 0
   CosSpeed: 0
-  OutAxis: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &2075158400
 MonoBehaviour:
   m_ObjectHideFlags: 0

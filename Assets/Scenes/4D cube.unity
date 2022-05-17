@@ -257,7 +257,7 @@ MonoBehaviour:
   Matrix: 
   Display: 
   cubes: []
-  switches: 2
+  switches: 3
   layer: 0
 --- !u!65 &1449579562
 BoxCollider:
