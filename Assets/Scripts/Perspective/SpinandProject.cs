@@ -67,9 +67,9 @@ public class SpinandProject : MonoBehaviour
         Matx.SetColumn( 0, new Vector4( costheta + axis.x*axis.x*(1-costheta), axis.x*axis.y*(1-costheta)-axis.z*sintheta, axis.x*axis.z*(1-costheta)+axis.y*sintheta,0 ) );
         Matx.SetColumn( 1, new Vector4( axis.x*axis.y*(1-costheta)+axis.z*sintheta, costheta + axis.y*axis.y*(1-costheta), axis.y*axis.z*(1-costheta)-axis.x*sintheta,0 ) );
         Matx.SetColumn( 2, new Vector4( axis.x*axis.z*(1-costheta)-axis.y*sintheta, axis.y*axis.z*(1-costheta)+axis.x*sintheta, costheta + axis.z*axis.z*(1-costheta),0 ) );
-        Matx.SetColumn( 3, new Vector4( 0,0,0,1 ) );
+        Matx.SetColumn( 3, new Vector4( 0,0,0,0 ) );
 
-        OutAxis = Matx * new Vector4(dot.x,dot.y,dot.z,1);
+        OutAxis = Matx * new Vector4(dot.x,dot.y,dot.z,0);
         transform.position = new Vector3(OutAxis.x,OutAxis.y,OutAxis.z);
     }
     void Project( Vector3 dot, Vector3 projector, Vector3 axis, Vector3 dotonplane ){

@@ -6,16 +6,18 @@ public class Maketube : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
+    public GameObject pointer;
     Mesh mesh;
     Vector3[] vertices;
     int[] triangles;
     public float diameter;
     public int verticesinround;
     public int intnum;
-
+    public int[] array;
     public int index;
-    public GameObject[] pointss = new GameObject[16];
-
+    public GameObject[] pointz = new GameObject[16];
+    Transform TPA;
+    Transform TPB;
     // Start is called before the first frame update
     void Awake()
     {
@@ -23,12 +25,17 @@ public class Maketube : MonoBehaviour
     }
     void Start()
     {
+        //initial pointz, index, array
+        InitialPointz(pointz, pointz.Length);
+        index = Findnumber(GetComponent<Transform>().name);
+        array = new int[64];
+        pointer = GameObject.Find("pointer");
+        pointer.GetComponent<Restricted3D>().InitialArray(array);
         //decide pointA and pointB
-        int[] array = new int[66];
-        InitialArray(array);
-        pointA = pointss[array[index * 2]];
-        pointB = pointss[array[index * 2 + 1]];
-        
+        pointA = pointz[array[index * 2]];
+        pointB = pointz[array[index * 2 + 1]];
+        TPA = pointA.GetComponent<Transform>();
+        TPB = pointB.GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -47,8 +54,8 @@ public class Maketube : MonoBehaviour
 
     void InitialMesh()
     {
-        Vector3 posA = pointA.GetComponent<Transform>().position;
-        Vector3 posB = pointB.GetComponent<Transform>().position;
+        Vector3 posA = TPA.position;
+        Vector3 posB = TPB.position;
         //Quaternion Rota = GetComponent<Transform>().rotation;
 
         Vector3 BminusA = posB - posA ;
@@ -94,30 +101,17 @@ public class Maketube : MonoBehaviour
         }
     }
 
-    void InitialArray(int[] array)
+    void InitialPointz(GameObject[] array, int arraynum)
     {
-        Vector4[] current_pos = new Vector4[32];
-        int arraycount = 0;
-        for (int intindex = 0; intindex < 16; intindex++)
-        {
-            current_pos[intindex] = new Vector4(1, 1, 1, 1);
-            if (intindex / 8 == 0) current_pos[intindex].x = -current_pos[intindex].x;
-            if ((intindex / 4) % 2 == 0) current_pos[intindex].y = -current_pos[intindex].y;
-            if ((intindex / 2) % 2 == 0) current_pos[intindex].z = -current_pos[intindex].z;
-            if (intindex % 2 == 0) current_pos[intindex].w = -current_pos[intindex].w;
-        }
-        for (int intindex = 0; intindex < 16; intindex++)
-        {
-            for (int i = 0; i < intindex; i++)
-            {
-                if ((current_pos[intindex] - current_pos[i]).magnitude == 2)
-                {
-                    array[arraycount] = i;
-                    arraycount++;
-                    array[arraycount] = intindex;
-                    arraycount++;
-                }
-            }
-        }
+        //string str = "Sphere (" + i.ToString() + ")";
+        for (int i = 0; i < arraynum; i++) array[i] = GameObject.Find("Sphere (" + i.ToString() + ")");
+    }
+
+    int Findnumber(string newstring)
+    {
+        int numberinstring = 0;
+        for (int i = 0; i < newstring.Length; i++)
+            for (int j = 0; j < 10; j++) if (char.Equals(newstring[i], j.ToString()[0])) numberinstring = numberinstring * 10 + j;
+        return numberinstring;
     }
 }

@@ -8,7 +8,8 @@ public class Restricted3D : MonoBehaviour
     public int roadnum;
     public int previousdot;
     public int nextdot;
-    public GameObject[] pointss = new GameObject[16];
+    //public GameObject[] pointss = new GameObject[16];
+    public GameObject[] pointz = new GameObject[16];
     public Vector3 posObj;
     public Vector3 posA;
     public Vector3 posB;
@@ -22,7 +23,7 @@ public class Restricted3D : MonoBehaviour
     {
         roadnum = 0;
         onroad = true;
-
+        InitialPointz(pointz , 16);
         //findedges { edge_0 from list_0 to list_1, edge_1 form list_2 to list_3, edge_2 from list_4 to list_5... }
         //findedges = new int[totaledgesnum * 2];
         findedges = new int[64];
@@ -38,7 +39,7 @@ public class Restricted3D : MonoBehaviour
         if (!onroad)
         {
             Vector3 ownpos = GetComponent<Transform>().position;
-            Vector3 owndotpos = pointss[vertexnum].GetComponent<Transform>().position;
+            Vector3 owndotpos = pointz[vertexnum].GetComponent<Transform>().position;
             int roadcount = sumupedges[vertexnum + 1] - sumupedges[vertexnum];
             int[] Roadindex = new int[roadcount];
             Vector3[] Destinationpos = new Vector3[roadcount];
@@ -46,7 +47,7 @@ public class Restricted3D : MonoBehaviour
             int maxindex = -1;
 
             for (int i = 0; i < roadcount; i++){
-                Destinationpos[i] = pointss[findvertices[sumupedges[vertexnum] * 2 + 2 * i]].GetComponent<Transform>().position;
+                Destinationpos[i] = pointz[findvertices[sumupedges[vertexnum] * 2 + 2 * i]].GetComponent<Transform>().position;
                 Roadindex[i] = findvertices[sumupedges[vertexnum] * 2 + 2 * i + 1];
             }
 
@@ -71,8 +72,8 @@ public class Restricted3D : MonoBehaviour
         {
             previousdot = findedges[2 * roadnum];
             nextdot = findedges[2 * roadnum + 1];
-            posA = pointss[previousdot].GetComponent<Transform>().position;
-            posB = pointss[nextdot].GetComponent<Transform>().position;
+            posA = pointz[previousdot].GetComponent<Transform>().position;
+            posB = pointz[nextdot].GetComponent<Transform>().position;
 
             posObj = GetComponent<Transform>().position;
             Vector3 axis = posB - posA;
@@ -107,7 +108,13 @@ public class Restricted3D : MonoBehaviour
         return Vector3.Dot(line1, line2) / line1.magnitude / line2.magnitude;
     }
 
-    void InitialArray(int[] array)
+    void InitialPointz(GameObject[] array, int arraynum)
+    {
+        //string str = "Sphere (" + i.ToString() + ")";
+        for (int i = 0; i < arraynum; i++) array[i] = GameObject.Find("Sphere (" + i.ToString() + ")");
+    }
+
+    public void InitialArray(int[] array)
     {
         Vector4[] current_pos = new Vector4[32];
         int arraycount = 0;
@@ -119,10 +126,8 @@ public class Restricted3D : MonoBehaviour
             if ((intindex / 2) % 2 == 0) current_pos[intindex].z = -current_pos[intindex].z;
             if (intindex % 2 == 0) current_pos[intindex].w = -current_pos[intindex].w;
         }
-        for (int intindex = 0; intindex < 16; intindex++)
-        {
-            for (int i = 0; i < intindex; i++)
-            {
+        for (int intindex = 0; intindex < 16; intindex++){
+            for (int i = 0; i < intindex; i++){
                 if ((current_pos[intindex] - current_pos[i]).magnitude == 2)
                 {
                     array[arraycount] = i;
@@ -132,12 +137,13 @@ public class Restricted3D : MonoBehaviour
                 }
             }
         }
+
     }
 
     void CalculateArrays()
     {
         int totaledgesnum = findedges.Length / 2;
-        int totalverticesnum = pointss.Length;
+        int totalverticesnum = pointz.Length;
 
         //countedges { vertex_0 have list_0 edges, vertex_1 have list_1 edges, vertex_2 have list_2 edges... }
         //countedges = new int[] { 2, 2, 2 };

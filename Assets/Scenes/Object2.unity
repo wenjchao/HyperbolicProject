@@ -156,27 +156,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 30
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &147790940
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -257,7 +259,7 @@ GameObject:
   - component: {fileID: 155271591}
   - component: {fileID: 155271596}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: pointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,30 +281,30 @@ MonoBehaviour:
   roadnum: 0
   previousdot: 0
   nextdot: 0
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   posObj: {x: 0, y: 0, z: 0}
   posA: {x: 0, y: 0, z: 0}
   posB: {x: 0, y: 0, z: 0}
   onroad: 0
-  findvertices: 
   findedges: 
   sumupedges: 
+  findvertices: 
 --- !u!65 &155271592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -426,27 +428,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 31
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &161116529
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -526,7 +530,7 @@ GameObject:
   - component: {fileID: 242510249}
   - component: {fileID: 242510248}
   - component: {fileID: 242510247}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,12 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 13
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -700,7 +699,7 @@ GameObject:
   - component: {fileID: 259579599}
   - component: {fileID: 259579598}
   - component: {fileID: 259579597}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,12 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 15
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -893,27 +887,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 1
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &339795215
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1012,27 +1008,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 29
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &340542006
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1112,7 +1110,7 @@ GameObject:
   - component: {fileID: 374203863}
   - component: {fileID: 374203862}
   - component: {fileID: 374203861}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1132,12 +1130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 6
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -1305,27 +1298,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 18
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &384080330
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1405,7 +1400,7 @@ GameObject:
   - component: {fileID: 406414064}
   - component: {fileID: 406414063}
   - component: {fileID: 406414062}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,12 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 10
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -1598,27 +1588,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 26
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &448912312
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1895,27 +1887,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 11
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &674643628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1995,7 +1989,7 @@ GameObject:
   - component: {fileID: 688740193}
   - component: {fileID: 688740192}
   - component: {fileID: 688740191}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2015,12 +2009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 12
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -2188,27 +2177,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 5
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &715176045
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2307,27 +2298,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 19
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &785688257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2426,27 +2419,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 28
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &811018513
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2545,27 +2540,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 4
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &818556023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2664,27 +2661,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 6
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &842919138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2783,27 +2782,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 10
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &873043435
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2883,7 +2884,7 @@ GameObject:
   - component: {fileID: 900534552}
   - component: {fileID: 900534551}
   - component: {fileID: 900534550}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2903,12 +2904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 9
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -3057,7 +3053,7 @@ GameObject:
   - component: {fileID: 911723803}
   - component: {fileID: 911723802}
   - component: {fileID: 911723801}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3077,12 +3073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 3
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -3250,27 +3241,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 2
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &990665193
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3369,27 +3362,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 12
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1092374370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3488,27 +3483,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 20
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1097539196
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3588,7 +3585,7 @@ GameObject:
   - component: {fileID: 1160829336}
   - component: {fileID: 1160829335}
   - component: {fileID: 1160829334}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3608,12 +3605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 7
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -3781,27 +3773,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 21
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1161048541
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3900,27 +3894,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 7
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1256431242
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4000,7 +3996,7 @@ GameObject:
   - component: {fileID: 1261792180}
   - component: {fileID: 1261792179}
   - component: {fileID: 1261792178}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4020,12 +4016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 5
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -4174,8 +4165,8 @@ GameObject:
   - component: {fileID: 1311053425}
   - component: {fileID: 1311053424}
   - component: {fileID: 1311053429}
-  m_Layer: 6
-  m_Name: Sphere
+  m_Layer: 0
+  m_Name: Sphere (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4309,12 +4300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 0
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -4348,7 +4334,7 @@ GameObject:
   - component: {fileID: 1338899782}
   - component: {fileID: 1338899781}
   - component: {fileID: 1338899780}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4368,12 +4354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 2
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -4541,27 +4522,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 14
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1380572506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4660,27 +4643,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 8
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1396259117
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4760,7 +4745,7 @@ GameObject:
   - component: {fileID: 1615491600}
   - component: {fileID: 1615491599}
   - component: {fileID: 1615491598}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4780,12 +4765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 11
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -4953,27 +4933,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 15
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1624318549
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5072,27 +5054,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 24
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1711023357
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5172,7 +5156,7 @@ GameObject:
   - component: {fileID: 1716734896}
   - component: {fileID: 1716734895}
   - component: {fileID: 1716734894}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5192,12 +5176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 1
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -5365,27 +5344,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 3
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1720447804
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5484,27 +5465,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 27
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1780229989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5583,7 +5566,7 @@ GameObject:
   - component: {fileID: 1807181620}
   - component: {fileID: 1807181619}
   m_Layer: 0
-  m_Name: tube
+  m_Name: tube (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5603,27 +5586,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 155271590}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 0
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1807181620
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5722,27 +5707,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 16
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1807450311
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5841,27 +5828,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 25
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1827301178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5960,27 +5949,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 23
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1859137562
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6079,27 +6070,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 9
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1895632669
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6198,27 +6191,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 17
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1924847656
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6298,7 +6293,7 @@ GameObject:
   - component: {fileID: 1978162756}
   - component: {fileID: 1978162755}
   - component: {fileID: 1978162754}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6318,12 +6313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 4
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -6491,27 +6481,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 13
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &1989563617
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6591,7 +6583,7 @@ GameObject:
   - component: {fileID: 1993934684}
   - component: {fileID: 1993934683}
   - component: {fileID: 1993934682}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6611,12 +6603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 8
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 000000000000
   Matx:
     e00: 0
     e01: 0
@@ -6784,27 +6771,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 1311053423}
   pointB: {fileID: 1338899779}
+  pointer: {fileID: 0}
   diameter: 0.3
   verticesinround: 30
   intnum: 30
+  array: 
   index: 22
-  pointss:
-  - {fileID: 1311053423}
-  - {fileID: 1716734893}
-  - {fileID: 1338899779}
-  - {fileID: 911723800}
-  - {fileID: 1978162753}
-  - {fileID: 1261792177}
-  - {fileID: 374203860}
-  - {fileID: 1160829333}
-  - {fileID: 1993934681}
-  - {fileID: 900534549}
-  - {fileID: 406414061}
-  - {fileID: 1615491597}
-  - {fileID: 688740190}
-  - {fileID: 242510246}
-  - {fileID: 2075158398}
-  - {fileID: 259579596}
+  pointz:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!23 &2060995105
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6884,7 +6873,7 @@ GameObject:
   - component: {fileID: 2075158401}
   - component: {fileID: 2075158400}
   - component: {fileID: 2075158399}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Sphere (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6904,12 +6893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intindex: 14
-  press1: 0
-  press2: 0
-  press3: 0
-  press4: 0
-  press5: 0
-  press6: 0
+  press: 00000000000000
   Matx:
     e00: 0
     e01: 0
