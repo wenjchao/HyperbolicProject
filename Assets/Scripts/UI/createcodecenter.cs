@@ -30,8 +30,8 @@ public class createcodecenter : MonoBehaviour
 
             for (int i = 0; i < 49; i++)
             {
-                if (result[i]) temp = temp + "1,";
-                else temp = temp + "0,";
+                if (result[i]) temp = temp + "true,";
+                else temp = temp + "false,";
             }
             temp = temp + "**";
             print(temp);

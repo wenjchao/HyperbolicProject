@@ -33,6 +33,6 @@ public class Create4Dcode : MonoBehaviour
         int column = index % 7;
         int rowmagnify = 40;
         int columnmagnify = 40;
-        GetComponent<RectTransform>().anchoredPosition = new Vector2((column - 4) * columnmagnify, (4 - row) * rowmagnify);
+        GetComponent<RectTransform>().anchoredPosition = new Vector2((column-3) * columnmagnify, (3-row) * rowmagnify);
     }
 }
