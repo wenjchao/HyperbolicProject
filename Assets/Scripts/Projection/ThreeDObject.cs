@@ -87,7 +87,7 @@ public class ThreeDObject : MonoBehaviour
             {
                 int temp = i + j * num;
                 array[temp] = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                array[temp].name = "Cube2d_" + temp;
+                array[temp].name = "Cube2d (" + temp + ")";
             }
         }
     }
@@ -126,7 +126,7 @@ public class ThreeDObject : MonoBehaviour
                 {
                     int temp = i + j * num + k * num * num;
                     array[temp] = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    array[temp].name = "Cube3d_" + temp;
+                    array[temp].name = "Cube3d (" + temp + ")";
                     array[temp].transform.parent = united.transform;
                 }
             }
