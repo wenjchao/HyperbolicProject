@@ -72,6 +72,7 @@ public class FourDObject : MonoBehaviour
         else if (switches == 2) switches = 3;
         else if (switches == 3) switches = 4;
         else switches = 1;
+        layer = 0;
     }
 
     void InitialRight()

@@ -36,6 +36,14 @@ public class Save2D : MonoBehaviour
         false,true,true,true,true,true,false,
         false,false,true,true,true,false,false
     };
+    public bool[] cube6 = new bool[7 * 7]
+    {
+        false,false,false,true,false,false,false,false,false,false,true,false,false,false,false,false,true,true,true,false,false,false,false,true,true,true,false,false,false,true,true,true,true,true,false,false,true,true,true,true,true,false,true,true,true,true,true,true,true
+    };
+    public bool[] cube7 = new bool[]
+    {
+        true,false,false,false,false,false,false,true,true,true,false,false,false,false,true,true,true,true,true,false,false,true,true,true,true,true,true,true,true,true,true,true,true,false,false,true,true,true,false,false,false,false,true,false,false,false,false,false,false
+    };
     // Start is called before the first frame update
     void Start()
     {

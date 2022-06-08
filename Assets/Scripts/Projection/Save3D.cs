@@ -13,6 +13,16 @@ public class Save3D : MonoBehaviour
         false,false,false,true,false,false,false,false,false,true,true,true,false,false,false,true,true,true,true,true,false,true,true,true,true,true,true,true,false,true,true,true,true,true,false,false,false,true,true,true,false,false,false,false,false,true,false,false,false,
         false,false,false,true,false,false,false,false,false,true,true,true,false,false,false,true,true,true,true,true,false,true,true,true,true,true,true,true,false,true,true,true,true,true,false,false,false,true,true,true,false,false,false,false,false,true,false,false,false,
     };
+    public bool[] cube2 = new bool[7 * 7 * 7]
+    {
+        false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,
+        false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,true,false,false,false,true,false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,
+    };
     // Start is called before the first frame update
     void Start()
     {

@@ -182,5 +182,6 @@ public class ThreeDObject : MonoBehaviour
         if (switches == 1) switches = 2;
         else if (switches == 2) switches = 3;
         else switches = 1;
+        layer = 0;
     }
 }

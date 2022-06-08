@@ -26,6 +26,9 @@ public class FourDExam : MonoBehaviour
     public Scrollbar rightbar_row;
     public Scrollbar leftbar_column;
     public Scrollbar leftbar_row;
+    public GameObject[] toggles;
+    public Toggle[] get_toggle;
+    public bool[] toggle_memory;
 
 
 
@@ -39,7 +42,10 @@ public class FourDExam : MonoBehaviour
         layer = 0;
         cubes_right = new GameObject[x*y*z];
         cubes_left = new GameObject[x * y * z];
-
+        toggles = new GameObject[8];
+        get_toggle = new Toggle[8];
+        toggle_memory = new bool[8];
+        InitialToggles();
         InitialLeft();
         InitialRight();
 
@@ -50,14 +56,14 @@ public class FourDExam : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow) && layer > 0)layer--;
         if (Input.GetKeyDown(KeyCode.RightArrow) && layer < w-1)layer++;
-        
+        Setswitches();
     }
 
     void FixedUpdate() {
 
 
-        SetLeft();
-        SetRight();
+        if (switches <= 4) SetLeft();
+        else if (switches >=5)SetRight();
         
     }
 
@@ -86,14 +92,6 @@ public class FourDExam : MonoBehaviour
         united_left.layer = 7;
     }
 
-    public void Switchswitches()
-    {
-        if (switches == 1) switches = 2;
-        else if (switches == 2) switches = 3;
-        else if (switches == 3) switches = 4;
-        else switches = 1;
-    }
-
     void InitialRight()
     {
         for (int k = 0; k < z; k++){
@@ -118,11 +116,9 @@ public class FourDExam : MonoBehaviour
                 for (int i = 0; i < x; i++)
                 {
                     int temp = i + j * x + k * y * x;
-
-                    if (switches == 1) Display[temp] = Matrix[i + j * x + k * y * x + x * y * z * layer];
-                    else if (switches == 2) Display[temp] = Matrix[i + j * x + layer * y * x + x * y * z * k];
-                    else if (switches == 3) Display[temp] = Matrix[i + layer * x + k * y * x + j * x * y * z];
-                    else if (switches == 4) Display[temp] = Matrix[layer + j * x + k * y * x + i * x * y * z];
+                    if (switches == 5) Display[temp] = Matrix[i + j * x + layer * y * x + x * y * z * k];
+                    else if (switches == 6) Display[temp] = Matrix[i + layer * x + k * y * x + j * x * y * z];
+                    else if (switches == 7) Display[temp] = Matrix[layer + j * x + k * y * x + i * x * y * z];
 
                     if (Display[temp]) cubes_right[temp].SetActive(true);
                     else cubes_right[temp].SetActive(false);
@@ -175,5 +171,41 @@ public class FourDExam : MonoBehaviour
         }
         Quaternion currentrotation = Quaternion.Euler(leftbar_row.value * 360, leftbar_column.value * 360, 0);
         theunitedTransform_left.rotation = currentrotation;
+    }
+
+    void InitialToggles()
+    {
+        for (int i = 1; i <= 7; i++)
+        {
+            toggles[i] = GameObject.Find("Toggle (" + i.ToString() + ")");
+            get_toggle[i] = toggles[i].GetComponent<Toggle>();
+            get_toggle[i].isOn = false;
+            toggle_memory[i] = false;
+        }
+        switches = 5;
+        get_toggle[5].isOn = true;
+        toggle_memory[5] = true;
+    }
+
+    public void Setswitches()
+    {
+        for (int i = 1; i <=7 ; i++)
+        {
+            if (get_toggle[i].isOn && toggle_memory[i] == false)
+            {
+                toggle_memory[i] = true;
+                switches = i;
+                for (int j = 1; j <= 7 ; j++)
+                {
+                    if (j != i)
+                    {
+                        toggle_memory[j] = false;
+                        get_toggle[j].isOn = false;
+                    }
+                }
+                layer = 0;
+                break;
+            }
+        }
     }
 }

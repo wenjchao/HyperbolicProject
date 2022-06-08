@@ -138,6 +138,7 @@ public class TwoDObject : MonoBehaviour
     {
         if (switches == 1) switches = 2;
         else switches = 1;
+        layer = 0;
         SetCubePosition();
     }
 }

@@ -8,6 +8,7 @@ public class TwoDExam : MonoBehaviour
     public int num;
     public float width;
     public bool[] Matrix;
+    public bool[] Matrix_wrong;
     public bool[] Display;
     public GameObject[] cubes;
     public GameObject[] test;
@@ -25,7 +26,8 @@ public class TwoDExam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Matrix = GetComponent<Save2D>().cube5;
+        Matrix = GetComponent<Save2D>().cube7;
+        Matrix_wrong = GetComponent<Save2D>().cube5;
         Display = new bool[num];
         layer = 0;
         cubes = new GameObject[num];
@@ -64,6 +66,24 @@ public class TwoDExam : MonoBehaviour
             for (int i = 0; i < num; i++)
             {
                 Display[i] = Matrix[layer + i * num];
+                if (Display[i]) ChangeAlpha(test[i], alpha_y);
+                else ChangeAlpha(test[i], alpha_n);
+            }
+        }
+        else if (switches == 2)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                Display[i] = Matrix_wrong[layer + i * num];
+                if (Display[i]) ChangeAlpha(test[i], alpha_y);
+                else ChangeAlpha(test[i], alpha_n);
+            }
+        }
+        else if (switches == 3)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                Display[i] = Matrix_wrong[i + layer * num];
                 if (Display[i]) ChangeAlpha(test[i], alpha_y);
                 else ChangeAlpha(test[i], alpha_n);
             }
@@ -133,6 +153,7 @@ public class TwoDExam : MonoBehaviour
                         get_toggle[j].isOn = false;
                     }
                 }
+                layer = 0;
                 break;
             }
         }

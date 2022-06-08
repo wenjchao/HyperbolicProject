@@ -8,6 +8,7 @@ public class ThreeDExam : MonoBehaviour
     public int num;
     public float width;
     public bool[] Matrix;
+    public bool[] Matrix_wrong;
     public bool[] Display;
     public GameObject[] cubes_right;
     public GameObject[] cubes_left;
@@ -33,13 +34,14 @@ public class ThreeDExam : MonoBehaviour
     {
         InitialUnited();
         Matrix = GetComponent<Save3D>().cube1;
+        Matrix_wrong = GetComponent<Save3D>().cube2;
         layer = 0;
         Display = new bool[num * num];
         cubes_right = new GameObject[num*num];
         cubes_left = new GameObject[num * num];
-        toggles = new GameObject[5];
-        get_toggle = new Toggle[5];
-        toggle_memory = new bool[5];
+        toggles = new GameObject[7];
+        get_toggle = new Toggle[7];
+        toggle_memory = new bool[7];
         InitialToggles();
         InitialrightCube();
         SetrightCubePosition();
@@ -59,7 +61,7 @@ public class ThreeDExam : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (switches == 0) SetrightCubeColor();
+        if (switches >= 5 ) SetrightCubeColor();
         else SetleftCubeColor();
     }
 
@@ -120,7 +122,8 @@ public class ThreeDExam : MonoBehaviour
             for (int j = 0; j < num; j++)
             {
                 int temp = i + j * num;
-                Display[temp] = Matrix[i + j * num + num * num * layer];
+                if (switches == 5) Display[temp] = Matrix[layer + (num - i - 1) * num + num * num * j];
+                else if (switches == 6) Display[temp] = Matrix[i + layer * num + num * num * j];
 
                 if (Display[temp]) ChangeAlpha(cubes_right[temp], alpha_y);
                 else ChangeAlpha(cubes_right[temp], alpha_n);
@@ -153,41 +156,86 @@ public class ThreeDExam : MonoBehaviour
 
     void SetleftCubeColor()
     {
-        for (int i = 0; i < num; i++)
+        if(switches == 1)
         {
-            for (int j = 0; j < num; j++)
+            for (int i = 0; i < num; i++)
             {
-                int temp = i + j * num;
-                if (switches == 1) Display[temp] = Matrix[layer + (num - i - 1) * num + num * num * j];
-                else if (switches == 2) Display[temp] = Matrix[i + layer * num + num * num * j];
+                for (int j = 0; j < num; j++)
+                {
+                    int temp = i + j * num;
+                    Display[temp] = Matrix[i + j * num + num * num * layer];
 
-                if (Display[temp]) ChangeAlpha(cubes_left[temp], alpha_y);
-                else ChangeAlpha(cubes_left[temp], alpha_n);
+                    if (Display[temp]) ChangeAlpha(cubes_left[temp], alpha_y);
+                    else ChangeAlpha(cubes_left[temp], alpha_n);
+                }
             }
         }
+        else if(switches == 2)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j < num; j++)
+                {
+                    int temp = i + j * num;
+                    Display[temp] = Matrix_wrong[i + j * num + num * num * layer];
+
+                    if (Display[temp]) ChangeAlpha(cubes_left[temp], alpha_y);
+                    else ChangeAlpha(cubes_left[temp], alpha_n);
+                }
+            }
+        }
+        else if (switches == 3)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j < num; j++)
+                {
+                    int temp = i + j * num;
+                    Display[temp] = Matrix_wrong[i + layer * num + num * num * j];
+
+                    if (Display[temp]) ChangeAlpha(cubes_left[temp], alpha_y);
+                    else ChangeAlpha(cubes_left[temp], alpha_n);
+                }
+            }
+        }
+        else if (switches == 4)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j < num; j++)
+                {
+                    int temp = i + j * num;
+                    Display[temp] = Matrix_wrong[layer + j * num + num * num * i];
+
+                    if (Display[temp]) ChangeAlpha(cubes_left[temp], alpha_y);
+                    else ChangeAlpha(cubes_left[temp], alpha_n);
+                }
+            }
+        }
+
     }
 
     void InitialToggles()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 1; i <= 6; i++)
         {
             toggles[i] = GameObject.Find("Toggle (" + i.ToString() + ")");
             get_toggle[i] = toggles[i].GetComponent<Toggle>();
             get_toggle[i].isOn = false;
         }
-        switches = 0;
-        get_toggle[0].isOn = true;
+        switches = 5;
+        get_toggle[5].isOn = true;
     }
 
     public void Setswitches()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 1; i <= 6; i++)
         {
             if (get_toggle[i].isOn && toggle_memory[i] == false)
             {
                 toggle_memory[i] = true;
                 switches = i;
-                for (int j = 0; j < 5; j++)
+                for (int j = 1; j <= 6; j++)
                 {
                     if (j != i)
                     {
@@ -195,6 +243,7 @@ public class ThreeDExam : MonoBehaviour
                         get_toggle[j].isOn = false;
                     }
                 }
+                layer = 0;
                 break;
             }
         }
